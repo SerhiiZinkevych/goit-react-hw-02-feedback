@@ -12,9 +12,11 @@ export default class App extends Component {
   };
 
   handleClick = e => {
-    this.setState({
-      [e.target.name]: this.state[e.target.name] + 1
-    });
+    const name = e.target.name;
+    this.setState(state => ({
+      ...state,
+      [name]: this.state[name] + 1
+    }));
   };
 
   countTotalFeedback = () =>
@@ -24,10 +26,6 @@ export default class App extends Component {
     this.state.good
       ? Math.round((this.state.good / this.countTotalFeedback()) * 100)
       : 0;
-
-  static defaultProps = {};
-
-  static propTypes = {};
 
   render() {
     return (
