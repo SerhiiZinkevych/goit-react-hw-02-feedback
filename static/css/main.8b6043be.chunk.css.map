@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,uDACF,CAEA,OACE,UACF","file":"main.8b6043be.chunk.css","sourcesContent":["body {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n}\n\nbutton {\n  margin: 3px;\n}\n"]}
